@@ -13,5 +13,10 @@ alert(resultado);
 }
 
 document.addEventListener("click", function() {
-    document.body.style.backgroundColor = "yellow";
+    const random1 = Math.floor(Math.random() * 255);
+    const random2 = Math.floor(Math.random() * 255);
+    const random3 = Math.floor(Math.random() * 255);
+
+    const rgb = "rgb("+random1+","+random2+","+random3+")";
+    document.body.style.backgroundColor = rgb;
 });
